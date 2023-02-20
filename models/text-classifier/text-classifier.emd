@@ -1,0 +1,32 @@
+{
+    "Architecture": "xlm-roberta",
+    "PretrainedModel": "xlm-roberta-base",
+    "ModelType": "Transformer",
+    "MixedPrecisionTraining": false,
+    "TextColumns": "Address",
+    "LabelColumns": [
+        "Country"
+    ],
+    "Label2Id": {
+        "AU": 0,
+        "BE": 1,
+        "CA": 2,
+        "ES": 3
+    },
+    "SequenceLength": 512,
+    "IsMultilabelClassificationProblem": false,
+    "SupportsVariableTileSize": false,
+    "ArcGISLearnVersion": "1.8.4",
+    "ModelFile": "text-classifier.pth",
+    "LearningRate": "slice('3.6308e-06', '3.6308e-05', None)",
+    "ModelName": "TextClassifier",
+    "backend": "pytorch",
+    "ModelParameters": {
+        "backbone": "ModelBackbone: xlm-roberta-base",
+        "backend": "pytorch"
+    },
+    "Accuracy": 1.0,
+    "MetricsPerLabel": "{\"AU\": {\"Precision_score\": 0.9286, \"Recall_score\": 1.0, \"F1_score\": 0.963, \"Support\": 13.0}, \"BE\": {\"Precision_score\": 1.0, \"Recall_score\": 1.0, \"F1_score\": 1.0, \"Support\": 25.0}, \"CA\": {\"Precision_score\": 1.0, \"Recall_score\": 0.9167, \"F1_score\": 0.9565, \"Support\": 12.0}, \"ES\": {\"Precision_score\": 1.0, \"Recall_score\": 1.0, \"F1_score\": 1.0, \"Support\": 11.0}}",
+    "resize_to": null,
+    "IsMultispectral": false
+}
