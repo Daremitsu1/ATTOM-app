@@ -1,0 +1,25 @@
+{
+    "Architecture": "t5",
+    "PretrainedModel": "t5-base",
+    "ModelType": "Transformer",
+    "MixedPrecisionTraining": false,
+    "TextColumns": "non-std-address",
+    "LabelColumns": [
+        "std-address"
+    ],
+    "SequenceLength": 512,
+    "SupportsVariableTileSize": false,
+    "ArcGISLearnVersion": "1.8.4",
+    "ModelFile": "seq2seq_unfrozen8E_bleu_88.pth",
+    "LearningRate": "1.0000e-01",
+    "ModelName": "SequenceToSequence",
+    "backend": "pytorch",
+    "ModelParameters": {
+        "backbone": "ModelBackbone: t5-base",
+        "backend": "pytorch"
+    },
+    "seq2seq_acc": 0.9458,
+    "bleu": 0.8842,
+    "resize_to": null,
+    "IsMultispectral": false
+}
